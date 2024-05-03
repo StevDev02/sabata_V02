@@ -1,0 +1,82 @@
+---
+
+// Header & Footer
+import Header from "../components/Header.tsx";
+
+import SEO from "../components/SEO.astro";
+import { ViewTransitions } from "astro:transitions";
+import "aos/dist/aos.css";
+
+interface Props {
+  titulo_pagina: string;
+  descripcion_pagina: string;
+  fecha_publicacion: string;
+  keywords_pagina: string;
+}
+
+const {
+  titulo_pagina,
+  descripcion_pagina,
+  fecha_publicacion,
+  keywords_pagina,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es-EC" class="h-full antialiased motion-safe:scroll-smooth">
+  <head>
+    <ViewTransitions />
+    <SEO
+      titulo_pagina={titulo_pagina}
+      descripcion_pagina={descripcion_pagina}
+      fecha_publicacion={fecha_publicacion}
+      keywords_pagina={keywords_pagina}
+    />
+  </head>
+  <!-- Content -->
+  <body class="bg-[--Platinum]">
+    <!-- HEADER -->
+    <Header client:load />
+    <!-- SLOT -->
+    <slot />
+    <!-- SLOT -->
+    <!-- AOS Animaciones -->
+    <script>
+      import { aosInit } from "../services/Aos.js";
+      aosInit();
+      document.addEventListener("astro:after-swap", aosInit);
+    </script>
+    <!-- Styles -->
+    <style is:global>
+      :root {
+        /* Palette */
+        --Nyanza: #e4fde1;
+        --Purpureus: #dda9ff;
+        --Russian_Violet: #330036;
+        --Light_Coral: #ef7674;
+        --Powder_Blue: #AAC7E6;
+        --Platinum: #e8e8e8;
+        /* Other Colors */
+        --Timberwolf: #D3CCCC;
+        --Screaming_Green: #91FF8F;
+        --Charcoal: #40424E;
+        --Ash_Gray: #C4CCBC;
+      }
+
+      @font-face {
+        font-family: "Poppins";
+        src: url("/fonts/Poppins-Regular.ttf") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      html {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+        overflow-y: auto;
+        color-scheme: light;
+      }
+    </style>
+  </body>
+</html>

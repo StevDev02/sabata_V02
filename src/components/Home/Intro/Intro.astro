@@ -1,0 +1,17 @@
+---
+import VideoIntro from "./VideoIntro.astro";
+import TextIntro from "./TextIntro.astro";
+---
+
+<section class="relative w-[100%] h-[100dvh]">
+  <div
+    class="z-10 bg-[#00000023] w-[100%] h-[100dvh] absolute top-0 left-0 cursor-default"
+  >
+  </div>
+  <VideoIntro />
+  <section
+    class="absolute top-[50%] left-[25%] text-white z-10 -translate-y-[50%] -translate-x-[50%] p-10"
+  >
+    <TextIntro />
+  </section>
+</section>

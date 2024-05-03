@@ -1,0 +1,27 @@
+---
+import Login_Form from "./Login_Form";
+---
+
+<div class="relative">
+  <h1 class="pb-20 text-5xl font-semibold text-center -leading-5">
+    Inicia sesión en<br />
+    Sabata directamente
+  </h1>
+  <div class="flex items-center justify-center gap-1">
+    <p class="text-md">Si no tienes una cuenta, puedes</p>
+    <!-- Link to the page /auth/register -->
+    <a
+      class="text-[#ef7674] text-md font-medium"
+      href="/auth/register"
+      title="Ir a Registrar"
+      aria-label="Ir a Registrar">Registrarte Aqui</a
+    >
+  </div>
+  <p class="flex items-center justify-center text-center text-md">
+    Y unete a nuestra comunidad.
+  </p>
+  <div class="bg_text_login -z-0"></div>
+  <div class="bg_text_login2 -z-0"></div>
+</div>
+
+<Login_Form client:idle />

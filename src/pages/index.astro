@@ -1,0 +1,33 @@
+---
+// Layout
+import Home from "../layout/Layout.astro";
+
+// Sections
+import WomenFashion from "@/components/Home/Women_Fashion/Women_Fashion.astro";
+import Intro from "@/components/Home/Intro/Intro.astro";
+import DiscountProducts from "@/components/Home/Discount_Products/Discount_Products.astro";
+import SummerOffer from "@/components/Home/Summer_Offers/Summer_Offer.astro";
+import LifeStyle from "@/components/Home/Life_Style/Life_Style.astro";
+import Collection from "@/components/Home/Collection/Collection.astro";
+---
+
+<Home
+  titulo_pagina="Inicio"
+  descripcion_pagina=""
+  fecha_publicacion="2024-05-02"
+  keywords_pagina=""
+>
+  <Intro />
+  <WomenFashion />
+  <DiscountProducts />
+  <SummerOffer />
+  <LifeStyle />
+  <Collection />
+</Home>
+
+<!-- Solucion Temporal Nav -->
+<style>
+  html {
+    color-scheme: dark;
+  }
+</style>
