@@ -29,7 +29,7 @@ const Header = () => {
               <a
                 title="Iniciar Sesion"
                 aria-label="Iniciar Sesion"
-                href="/auth/login"
+                href="/ec/auth/login"
                 data-astro-prefetch="tap"
               >
                 <Button variant="Platinum">Iniciar Sesion</Button>
@@ -37,7 +37,7 @@ const Header = () => {
               <a
                 title="Registrarse"
                 aria-label="Registrarse"
-                href="/auth/register"
+                href="/ec/auth/register"
                 data-astro-prefetch="tap"
               >
                 <Button variant="Russian_Violet">Registrarse</Button>

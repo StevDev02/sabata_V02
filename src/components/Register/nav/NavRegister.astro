@@ -1,0 +1,18 @@
+---
+import LogoNavRegister from "./LogoNavRegister.astro";
+import NavOptionsRegister from "./NavOptionsRegister.astro";
+
+---
+<nav class='w-[100%] flex items-center justify-between px-14 py-5 text-[13px] '>
+    <LogoNavRegister />
+    <ul class=' flex items-center justify-between p-1 gap-7  '>
+      <li class='flex gap-10 '>
+        <a href='/' class='link_login' href=''>Inicio</a>
+        <a href='/ec/shop/' class='link_login' href=''>Tienda </a>
+        <a class='link_login' href=''>Accesorio</a>
+        <a class='link_login' href=''>Ofertas </a>
+        <a class='link_login' href=''>Contacto</a>
+      </li>
+    </ul>
+    <NavOptionsRegister />
+  </nav>

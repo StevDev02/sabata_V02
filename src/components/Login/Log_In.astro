@@ -1,10 +1,15 @@
 ---
 import ContentLogin from "./Content_Login.astro";
+import NavLogin from "./nav/NavLogin.astro";
+import './style/style.css'
 ---
 
 <!-- style="background-image: url(/img/Home/bg_footer.webp)" -->
 <section
-  class="h-[100dvh] flex items-center justify-between w-full gap-10 px-20"
+  class="w-[100%] h-[100vh] bg-cover bg-center bg-no-repeat "
+  style="background-image: url(/img/login/selena_login.jpg)"
+  
 >
+  <NavLogin />
   <ContentLogin />
 </section>
