@@ -6,24 +6,24 @@ import {
   
   export function MenubarDemo() {
     return (
-      <Menubar className="bg-[#f4f4f5] " >
+      <Menubar className="bg-[#00000011] " >
         <MenubarMenu>
-          <MenubarTrigger className="bg-white rounded-md" >Populares</MenubarTrigger>
+          <MenubarTrigger className="bg-[#fff] rounded-md cursor-pointer" >Populares</MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="hover:bg-white rounded-md" >Tacones</MenubarTrigger>
+          <MenubarTrigger className="hover:bg-[#fff] rounded-md cursor-pointer" >Tacones</MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="hover:bg-white rounded-md" >Faldas</MenubarTrigger>
+          <MenubarTrigger className="hover:bg-[#fff] rounded-md cursor-pointer" >Faldas</MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="hover:bg-white rounded-md" >Pantalones</MenubarTrigger>
+          <MenubarTrigger className="hover:bg-[#fff] rounded-md cursor-pointer" >Pantalones</MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="hover:bg-white rounded-md" >Blusas</MenubarTrigger>
+          <MenubarTrigger className="hover:bg-[#fff] rounded-md cursor-pointer" >Blusas</MenubarTrigger>
         </MenubarMenu>
         <MenubarMenu>
-          <MenubarTrigger className="hover:bg-white rounded-md" >Lencerias</MenubarTrigger>
+          <MenubarTrigger className="hover:bg-[#fff] rounded-md cursor-pointer" >Lencerias</MenubarTrigger>
         </MenubarMenu>
       </Menubar>
     )

@@ -6,10 +6,10 @@ import { InputDemo } from "./Shandcn_Shop/Input/Input_shop";
 import { SwitchDemo } from './Shandcn_Shop/Switch/switch_shop'
 import { MenubarDemo } from './Shandcn_Shop/Menu_Bar/menubar_shop'
 import { DropdownMenuDemoUserConfig } from './Shandcn_Shop/Drop_Menu/drop_menu_user_config_shop'
+import { DropdownMenuCheckboxes } from './Shandcn_Shop/Drop_Menu/drop_menu_filters_shop'
 
 ---
-<main>
-    <nav class="">
+    <nav class="border-b ">
         <header class="flex items-center justify-between z-50 px-[24px] py-[16px] ">
             <BreadcrumbDemo />
             <div class="flex gap-[16px] items-center" >
@@ -20,18 +20,24 @@ import { DropdownMenuDemoUserConfig } from './Shandcn_Shop/Drop_Menu/drop_menu_u
             </div>
         </header>
     
-        <section class="px-[25px] flex justify-between items-center">
+        
+    </nav>
+
+    <main class="flex w-[100%] ">
+
+    <nav class="w-[305px] border-r h-[80vh]">
+        <h2>Sidebar</h2>
+    </nav>
+
+    <section class=" w-[100%]  " >
+        <section class="px-[25px] py-3 flex justify-between items-center border-b">
             <div class=" inline-block" >
                 <MenubarDemo client:idle />
             </div>
             <div class="flex gap-3 items-center z-0 " >
                 <div class="cursor-pointer relative inline-block">
-                    <svg class="absolute top-[50%] left-[23%] -translate-x-[50%] -translate-y-[50%]" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 7.24976C3 6.83554 3.33579 6.49976 3.75 6.49976H20.25C20.6642 6.49976 21 6.83554 21 7.24976C21 7.66397 20.6642 7.99976 20.25 7.99976H3.75C3.33579 7.99976 3 7.66397 3 7.24976Z" fill="black"/>
-                        <path d="M6 11.9997C6 11.5855 6.33579 11.2497 6.75 11.2497H17.25C17.6642 11.2497 18 11.5855 18 11.9997C18 12.4139 17.6642 12.7497 17.25 12.7497H6.75C6.33579 12.7497 6 12.4139 6 11.9997Z" fill="black"/>
-                        <path d="M9.75 15.9998C9.33579 15.9998 9 16.3355 9 16.7498C9 17.164 9.33579 17.4998 9.75 17.4998H14.25C14.6642 17.4998 15 17.164 15 16.7498C15 16.3355 14.6642 15.9998 14.25 15.9998H9.75Z" fill="black"/>
-                        </svg>                    
-                    <Button className="px-[31px] pr-3 border h-[30px] ">Filtro</Button>
+                                     
+                    <DropdownMenuCheckboxes client:idle>
                 </div>
                 <SwitchDemo client:idle />
                 <div class="cursor-pointer relative inline-block">
@@ -43,10 +49,6 @@ import { DropdownMenuDemoUserConfig } from './Shandcn_Shop/Drop_Menu/drop_menu_u
                     <Button className="bg-black text-white px-[31px] h-[32px] pr-3 ">Revisar Carrito</Button>
             </div>
         </section>
-    </nav>
-
-    <main class=" ">
+    </section>
 
     </main>
-
-</main>

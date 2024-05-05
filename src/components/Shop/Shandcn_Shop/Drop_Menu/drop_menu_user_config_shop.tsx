@@ -13,7 +13,7 @@
     DropdownMenuSubContent,
     DropdownMenuSubTrigger,
     DropdownMenuTrigger,
-  } from "@/components/ui/dropdown-menu"
+  } from "./dropdown-menu_variants_shop"
   
   export function DropdownMenuDemoUserConfig() {
     return (
