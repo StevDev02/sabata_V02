@@ -1,5 +1,5 @@
 
-  import { Button } from "@/components/ui/button"
+  import { Button } from "../Button/button_Variants_shop"
   import {
     DropdownMenu,
     DropdownMenuContent,
