@@ -22,9 +22,12 @@ const buttonVariants = cva(
         Charcoal: "bg-[#40424E] text-white shadow-md",
         Ash_Gray: "bg-[#C4CCBC] text-black shadow-md",
 
-        // Nav
-        Nav_LogIn:"",
-        Nav_Register:"",
+        // Nav Home
+        Nav_Home_Btn_Login:"",
+        Nav_:"",
+
+        // Nav Login & Register
+        
 
         // Custom Variants
         LogOn: "w-[300px] text-base border py-2 rounded-none border-zinc-500 hover:bg-black hover:text-white mt-3",

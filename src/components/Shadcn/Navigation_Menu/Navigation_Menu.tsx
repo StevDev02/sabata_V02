@@ -60,7 +60,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-3 p-4 lg:w-[500px]  lg:grid-cols-[.75fr_1fr] bg-white text-black">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
@@ -107,10 +107,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          {/* Link */}
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            Documentation
-          </NavigationMenuLink>
+          <a href="" className="text-sm ">Contactanos</a>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

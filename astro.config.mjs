@@ -3,13 +3,14 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from '@astrojs/tailwind';
 import react from "@astrojs/react";
 
+// Aqui va el import para vercel desde developer
+import vercel from "@astrojs/vercel/serverless";
+
 // https://astro.build/config
 export default defineConfig({
   prefetch: true,
   site: "https://sabata.com",
-  integrations: [
-    tailwind(),
-    sitemap({
+  integrations: [tailwind(), sitemap({
     changefreq: "weekly",
     priority: 0.8,
     // Cambiar para el deploy
@@ -17,8 +18,10 @@ export default defineConfig({
     i18n: {
       defaultLocale: "es",
       locales: {
-        es: 'es-EC',
-      },
+        es: 'es-EC'
+      }
     }
-  }), react()]
+  }), react()],
+  output: "server",
+  adapter: vercel()
 });
