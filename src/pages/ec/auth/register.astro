@@ -1,12 +1,14 @@
 ---
-import Register_Page_Layout from "../../../layout/Layout.astro";
 
+import Register_Page_Layout from "../../../layout/Layout.astro";
+import { ViewTransitions } from "astro:transitions";
 import RegisterPage from "@/components/Register/RegisterPage.astro";
 
 
 ---
 
 <Register_Page_Layout
+transition:animate="slide"
   titulo_pagina="Registro"
   descripcion_pagina=""
   fecha_publicacion="2024-05-02"

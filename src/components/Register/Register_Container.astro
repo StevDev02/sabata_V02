@@ -1,9 +1,10 @@
 ---
-import RegisterForm from "./RegisterForm.astro";
+
+import { RegisterForm } from "./RegisterForm";
 import RegisterTextContent from "./RegisterTextContent.astro";
 
 
 ---
 
-<RegisterForm />
-<RegisterTextContent/>
+<RegisterForm client:idle />
+<RegisterTextContent />

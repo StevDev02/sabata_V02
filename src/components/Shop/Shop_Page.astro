@@ -1,0 +1,52 @@
+---
+
+import { BreadcrumbDemo } from "./Shandcn_Shop/Breadcrumb/Breadcrumb_shop";
+import { Button } from "./Shandcn_Shop/Button/button_Variants_shop";
+import { InputDemo } from "./Shandcn_Shop/Input/Input_shop";
+import { SwitchDemo } from './Shandcn_Shop/Switch/switch_shop'
+import { MenubarDemo } from './Shandcn_Shop/Menu_Bar/menubar_shop'
+import { DropdownMenuDemoUserConfig } from './Shandcn_Shop/Drop_Menu/drop_menu_user_config_shop'
+
+---
+<main>
+    <nav class="">
+        <header class="flex items-center justify-between z-50 px-[24px] py-[16px] ">
+            <BreadcrumbDemo />
+            <div class="flex gap-[16px] items-center" >
+                    <InputDemo />
+                <div class="">
+                    <DropdownMenuDemoUserConfig client:idle />  
+                </div>
+            </div>
+        </header>
+    
+        <section class="px-[25px] flex justify-between items-center">
+            <div class=" inline-block" >
+                <MenubarDemo client:idle />
+            </div>
+            <div class="flex gap-3 items-center z-0 " >
+                <div class="cursor-pointer relative inline-block">
+                    <svg class="absolute top-[50%] left-[23%] -translate-x-[50%] -translate-y-[50%]" width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 7.24976C3 6.83554 3.33579 6.49976 3.75 6.49976H20.25C20.6642 6.49976 21 6.83554 21 7.24976C21 7.66397 20.6642 7.99976 20.25 7.99976H3.75C3.33579 7.99976 3 7.66397 3 7.24976Z" fill="black"/>
+                        <path d="M6 11.9997C6 11.5855 6.33579 11.2497 6.75 11.2497H17.25C17.6642 11.2497 18 11.5855 18 11.9997C18 12.4139 17.6642 12.7497 17.25 12.7497H6.75C6.33579 12.7497 6 12.4139 6 11.9997Z" fill="black"/>
+                        <path d="M9.75 15.9998C9.33579 15.9998 9 16.3355 9 16.7498C9 17.164 9.33579 17.4998 9.75 17.4998H14.25C14.6642 17.4998 15 17.164 15 16.7498C15 16.3355 14.6642 15.9998 14.25 15.9998H9.75Z" fill="black"/>
+                        </svg>                    
+                    <Button className="px-[31px] pr-3 border h-[30px] ">Filtro</Button>
+                </div>
+                <SwitchDemo client:idle />
+                <div class="cursor-pointer relative inline-block">
+                        <svg class="absolute top-[50%] left-[13%] -translate-x-[50%] -translate-y-[50%]"  width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 3C0 2.44772 0.447715 2 1 2H3.67703C4.08593 2 4.45364 2.24895 4.6055 2.62861L5.15407 4H21.523C22.2304 4 22.7142 4.71453 22.4514 5.37139L19.5029 12.7428C19.1992 13.5021 18.4637 14 17.6459 14H8.21106L6.87255 16H19C19.5523 16 20 16.4477 20 17C20 17.5523 19.5523 18 19 18H5C4.63088 18 4.29178 17.7967 4.1179 17.4711C3.94402 17.1455 3.96365 16.7506 4.16895 16.4438L6.55276 12.8819L3 4H1C0.447715 4 0 3.55228 0 3ZM8.35407 12H17.6459L20.0459 6H5.95407L8.35407 12Z" fill="white"/>
+                            <path d="M7.5 21.25C7.5 22.2165 6.7165 23 5.75 23C4.7835 23 4 22.2165 4 21.25C4 20.2835 4.7835 19.5 5.75 19.5C6.7165 19.5 7.5 20.2835 7.5 21.25Z" fill="white"/>
+                            <path d="M18.25 23C19.2165 23 20 22.2165 20 21.25C20 20.2835 19.2165 19.5 18.25 19.5C17.2835 19.5 16.5 20.2835 16.5 21.25C16.5 22.2165 17.2835 23 18.25 23Z" fill="white"/>
+                        </svg>            
+                    <Button className="bg-black text-white px-[31px] h-[32px] pr-3 ">Revisar Carrito</Button>
+            </div>
+        </section>
+    </nav>
+
+    <main class=" ">
+
+    </main>
+
+</main>

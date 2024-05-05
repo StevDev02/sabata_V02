@@ -1,14 +1,18 @@
 ---
 import VideoIntro from "./VideoIntro.astro";
 import TextIntro from "./TextIntro.astro";
+import NavHome from "../Nav_Home/Nav_Home.astro";
 ---
 
-<section class="relative w-[100%] h-[100dvh]">
+<section class="relative w-[100%] h-[100vh]">
   <div
     class="z-10 bg-[#00000023] w-[100%] h-[100dvh] absolute top-0 left-0 cursor-default"
   >
   </div>
   <VideoIntro />
+  <header class='absolute w-[100%] top-0 left-0 px-0 py-3 text-white text-[15px] font-medium z-20'>
+    <NavHome />
+  </header>
   <section
     class="absolute top-[50%] left-[25%] text-white z-10 -translate-y-[50%] -translate-x-[50%] p-10"
   >

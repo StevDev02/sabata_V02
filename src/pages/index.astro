@@ -9,6 +9,7 @@ import DiscountProducts from "@/components/Home/Discount_Products/Discount_Produ
 import SummerOffer from "@/components/Home/Summer_Offers/Summer_Offer.astro";
 import LifeStyle from "@/components/Home/Life_Style/Life_Style.astro";
 import Collection from "@/components/Home/Collection/Collection.astro";
+import Footer from "@/components/Home/Footer.astro";
 ---
 
 <Home
@@ -17,17 +18,13 @@ import Collection from "@/components/Home/Collection/Collection.astro";
   fecha_publicacion="2024-05-02"
   keywords_pagina=""
 >
-  <Intro />
-  <WomenFashion />
-  <DiscountProducts />
-  <SummerOffer />
-  <LifeStyle />
-  <Collection />
+  <main class='relative'>
+    <Intro />
+    <WomenFashion />
+    <SummerOffer />
+    <DiscountProducts />
+    <LifeStyle />
+    <Collection />
+    <Footer />
+  </main>
 </Home>
-
-<!-- Solucion Temporal Nav -->
-<style>
-  html {
-    color-scheme: dark;
-  }
-</style>
