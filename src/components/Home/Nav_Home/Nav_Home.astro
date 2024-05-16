@@ -1,6 +1,5 @@
 ---
 
-import NavigationMenu from '@/components/Shadcn/Navigation_Menu/Navigation_Menu'
 import { IconsNav } from './Icos'
 import LogoHome from './LogoHome.astro'
 
@@ -8,14 +7,14 @@ import LogoHome from './LogoHome.astro'
 
 <nav class='flex items-center justify-between px-10'>
     <LogoHome />
-    <ul class=' flex items-center justify-between p-1 gap-7  '>
+    <ul class='flex items-center justify-between p-1 gap-7'>
       <!-- <li class='flex gap-10 '>
         <a class='a_login' href='/ec/shop/' >Tienda</a>
         <a class='a_login' href=''>Accesorios</a>
         <a class='a_login' href=''>Ofertas</a>
         <a class='a_login' href=''>Contacto</a>
       </li> -->
-      <NavigationMenu client:idle />
+      
     </ul>
     <IconsNav />
   </nav>
