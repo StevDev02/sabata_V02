@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Shooping_Product_Item } from "../Card/Shooping_Product_Item";
 import {
   Sheet,
   SheetClose,
@@ -10,6 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Shooping_Container_Products from "../Containers_Scroll_Area/Shooping_Container_Products";
 
 export function ShoppingCart() {
   return (
@@ -45,75 +45,60 @@ export function ShoppingCart() {
       <SheetContent>
         {/* Header Shooping Cart */}
         <SheetHeader className="p-4">
-          <SheetTitle className="text-3xl font-semibold">Carrito</SheetTitle>
-          <SheetDescription className="text-lg">
-            Aqui encontraras todos tus productos añadidos al carrito.
-          </SheetDescription>
+          <SheetTitle className="text-2xl font-semibold">
+            Carrito de Compras
+          </SheetTitle>
         </SheetHeader>
         {/* Body Shooping Cart */}
         <div
           id="Shooping_Cart_Container"
           aria-label="Shooping_Cart_Container"
-          className="flex flex-col items-center" 
+          className="flex flex-col items-center"
         >
           {/* Products Added to the Shooping Cart */}
-          <ul className="z-10 w-full overflow-y-auto h-96">
-            <li>
-              <Shooping_Product_Item />
-            </li>
-            <li>
-              <Shooping_Product_Item />
-            </li>
-            <li>
-              <Shooping_Product_Item />
-            </li>
-            <li>
-              <Shooping_Product_Item />
-            </li>
-            <li>
-              <Shooping_Product_Item />
-            </li>
-            <li>
-              <Shooping_Product_Item />
-            </li>
-            <li>
-              <Shooping_Product_Item />
-            </li>
-            <li>
-              <Shooping_Product_Item />
-            </li>
-            <li>
-              <Shooping_Product_Item />
-            </li>
-          </ul>
+          <Shooping_Container_Products />
         </div>
-        {/* Footer Shooping Cart */}
-        <div className="absolute bottom-0 z-20 w-full p-4 bg-white"> 
-          <div className="flex justify-between text-base font-medium text-gray-900">
-            <p>Descuento</p>
-            <p>20%</p>
+        <SheetFooter>
+          {/* Footer Shooping Cart */}
+          <div className="flex flex-col w-full h-40 gap-1 px-4 text-sm font-medium bg-white">
+            <div className="flex justify-between text-gray-900">
+              <p>Duracion del Envio</p>
+              <span>10 Dias</span>
+            </div>
+            <div className="flex justify-between text-gray-900">
+              <p>Envio</p>
+              <span>$0.00</span>
+            </div>
+            <div className="flex justify-between text-gray-900">
+              <p>IVA</p>
+              <span>16%</span>
+            </div>
+            <div className="flex justify-between text-gray-900">
+              <p>Descuento</p>
+              <span className="text-red-500">-$100.00</span>
+            </div>
+            <div className="flex justify-between text-gray-900">
+              <p>Subtotal</p>
+              <span>$314.40</span>
+            </div>
+            <div className="flex justify-between text-gray-900">
+              <p>Total</p>
+              <span className="text-blue-500 ">$214.40</span>
+            </div>
+            <p className="font-normal text-center text-gray-500">
+              Siempre revisa tu carrito antes de finalizar tu compra.
+            </p>
+            <div>
+              <Button className="w-full">Finalizar Compra</Button>
+            </div>
+            <div className="flex justify-center text-center text-gray-500">
+              <p className="px-1">o</p>
+              <SheetClose className="font-semibold text-blue-500 text-md">
+                Continuar Comprando
+              </SheetClose>
+            </div>
           </div>
-          <div className="flex justify-between text-base font-medium text-gray-900">
-            <p>Subtotal</p>
-            <p>$262.00</p>
-          </div>
-          <div className="flex justify-between text-base font-medium text-gray-900">
-            <p>Total</p>
-            <p className="font-bold text-blue-500">$314.40</p>
-          </div>
-          <p className="my-1 text-sm text-gray-500">
-            Envío e impuestos calculados al finalizar la compra.
-          </p>
-          <div className="my-3">
-            <Button className="w-full">Finalizar Compra</Button>
-          </div>
-          <div className="flex justify-center my-3 text-sm text-center text-gray-500">
-            <p className="px-1">o</p>
-            <SheetClose className="font-semibold text-blue-500 text-md">
-              Continuar Comprando
-            </SheetClose>
-          </div>
-        </div>
+        </SheetFooter>
       </SheetContent>
     </Sheet>
   );

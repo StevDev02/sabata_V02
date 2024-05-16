@@ -1,21 +1,21 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-export function Mini_Product_Item() {
+export function Product_Item() {
   return (
-    <Card className="flex items-center justify-start gap-2">
+    <Card className="flex flex-col items-center justify-start gap-2 border-0 shadow-md w-fit h-52">
       <img
-        className="object-cover object-center w-14 h-14"
+        className="object-cover object-center w-40 h-40"
         src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg"
         loading="lazy"
         alt="[Product]"
         aria-label="[Product]"
         title="[Product]"
       />
-      <CardContent>
-        <span>Bolso de Mujer Rojo</span>
+      <CardContent className="flex justify-between text-sm">
+        
       </CardContent>
     </Card>
   );
 }
 
-export default Mini_Product_Item;
+export default Product_Item;

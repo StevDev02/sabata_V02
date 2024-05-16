@@ -24,9 +24,10 @@ export function DropdownMenuCheckboxes() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          className="flex items-center justify-between px-2"
+          className="flex items-center justify-between gap-1 border shadow-none"
           variant="outline"
         >
+          Filtro
           <svg
             width="17"
             height="17"
@@ -47,10 +48,9 @@ export function DropdownMenuCheckboxes() {
               fill="black"
             />
           </svg>
-          Filtro
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-[160px] bg-white">
+      <DropdownMenuContent className="w-40 bg-white">
         <DropdownMenuLabel>Fitrar por</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuCheckboxItem
@@ -70,12 +70,6 @@ export function DropdownMenuCheckboxes() {
           onCheckedChange={setShowStatusBar}
         >
           Mas destacados
-        </DropdownMenuCheckboxItem>
-        <DropdownMenuCheckboxItem
-          checked={showActivityBar}
-          onCheckedChange={setShowActivityBar}
-        >
-          Favoritos
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>

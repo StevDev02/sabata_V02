@@ -55,6 +55,10 @@ export function BreadcrumbDemo() {
         <BreadcrumbItem>
           <BreadcrumbPage className="text-black">Tienda</BreadcrumbPage>
         </BreadcrumbItem>
+        <BreadcrumbSeparator />
+        <BreadcrumbItem>
+          <BreadcrumbPage className="text-black">Todo</BreadcrumbPage>
+        </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
   );
