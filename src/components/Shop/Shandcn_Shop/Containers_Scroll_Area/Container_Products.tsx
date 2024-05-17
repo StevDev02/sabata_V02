@@ -1,6 +1,6 @@
 import Product_Item from "../Card/Product_Item";
 
-const Products = Array.from({ length: 100 }, (_, index) => (
+const Products = Array.from({ length: 5 }, (_, index) => (
   <Product_Item key={index} />
 ));
 

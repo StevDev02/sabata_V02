@@ -1,7 +1,7 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Shooping_Product_Item from "../Card/Shooping_Product_Item";
 
-const Shooping_Cart_Products = Array.from({ length: 10 }, (_, index) => (
+const Shooping_Cart_Products = Array.from({ length: 2 }, (_, index) => (
   <Shooping_Product_Item key={index} />
 ));
 
