@@ -21,13 +21,13 @@ const buttonVariants = cva(
         Timberwolf: "bg-[#D3CCCC] text-black shadow-md",
         Charcoal: "bg-[#40424E] text-white shadow-md",
         Ash_Gray: "bg-[#C4CCBC] text-black shadow-md",
+        Naked: "bg-none text-black border-0 rounded-none font-regular",
 
-        // Nav Home
-        Nav_Home_Btn_Login:"",
-        Nav_:"",
+        // Default
+        default: "bg-black text-white shadow-md",
 
-        // Nav Login & Register
-        
+        // Product Item
+        Product_Item: "bg-none border-0 shadow-none",
 
         // Custom Variants
         LogOn: "w-[300px] text-base border py-2 rounded-none border-zinc-500 hover:bg-black hover:text-white mt-3",
@@ -36,16 +36,18 @@ const buttonVariants = cva(
       },
       size: {
         // Normal Sizes
+        default: "h-10 px-[31px] h-[32px] pr-3",
         md: "h-10 rounded-md px-4",
         lg: "h-10 rounded-md px-8",
         xl: "h-10 rounded-md px-20",
+        none: "h-auto rounded-none",
         //Custom Sizes
         SocialNetSize: "h-auto w-auto px-7 py-2 rounded-lg",
         icon: "h-9 w-9",
       },
     },
     defaultVariants: {
-      variant: "Platinum",
+      variant: "default",
       size: "lg",
     },
   }

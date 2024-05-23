@@ -3,7 +3,7 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from '@astrojs/tailwind';
 import react from "@astrojs/react";
 
-// Aqui va el import para vercel desde developer
+// Aqui va el import para vercel desde Omar
 import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config

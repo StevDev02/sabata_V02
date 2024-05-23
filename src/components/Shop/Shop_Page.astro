@@ -1,54 +1,77 @@
 ---
-
 import { BreadcrumbDemo } from "./Shandcn_Shop/Breadcrumb/Breadcrumb_shop";
-import { Button } from "./Shandcn_Shop/Button/button_Variants_shop";
-import { InputDemo } from "./Shandcn_Shop/Input/Input_shop";
-import { SwitchDemo } from './Shandcn_Shop/Switch/switch_shop'
-import { MenubarDemo } from './Shandcn_Shop/Menu_Bar/menubar_shop'
-import { DropdownMenuDemoUserConfig } from './Shandcn_Shop/Drop_Menu/drop_menu_user_config_shop'
-import { DropdownMenuCheckboxes } from './Shandcn_Shop/Drop_Menu/drop_menu_filters_shop'
-
+import { Searcher } from "./Shandcn_Shop/Input/Input_shop";
+import { SwitchDemo } from "./Shandcn_Shop/Switch/switch_shop";
+import { MenubarDemo } from "./Shandcn_Shop/Menu_Bar/menubar_shop";
+import { DropdownMenuCheckboxes } from "./Shandcn_Shop/Drop_Menu/drop_menu_filters_shop";
+import ShoppingCart from "./Shandcn_Shop/Sheet/Shooping_Cart";
+import Command_searcher_shop from "./Shandcn_Shop/Command/Command_searcher_shop";
+import { Avatar } from "../ui/avatar";
+import Container_Products from "./Shandcn_Shop/Containers_Scroll_Area/Container_Products";
+import { Separator } from "@/components/ui/separator";
+import { Button } from "../ui/button";
+import Filters_Everything from "./Shandcn_Shop/Sidebar/Filters_everything";
 ---
-    <nav class="border-b ">
-        <header class="flex items-center justify-between z-50 px-[24px] py-[16px] ">
-            <BreadcrumbDemo />
-            <div class="flex gap-[16px] items-center" >
-                    <InputDemo />
-                <div class="">
-                    <DropdownMenuDemoUserConfig client:idle />  
-                </div>
-            </div>
-        </header>
-    
-        
-    </nav>
 
-    <main class="flex w-[100%] ">
+<header class="border-b">
+  {/* Nav Dashboard */}
+  <nav class="flex items-center justify-between z-50 px-[24px] py-[16px]">
+    {/* Routes Temp */}
+    <BreadcrumbDemo client:idle />
+    <div class="flex items-center justify-between">
+      {/* Searcher */}
+      <Searcher client:idle />
+      {/* User Profile Temp */}
+      <Avatar />
+    </div>
+  </nav>
+</header>
 
-    <nav class="w-[305px] border-r h-[80vh]">
-        <h2>Sidebar</h2>
-    </nav>
+<header class="sticky py-[18px] w-[100%] bg-white border-b">
+  <nav class="flex px-[24px] items-center justify-between">
+    <h1 class=" text-2xl font-semibold">Tienda</h1>
+    {/* Categories Temp */}
+    <MenubarDemo client:idle />
+    <div class="flex items-center justify-center gap-4">
+      {/* Filter Temp */}
+      <DropdownMenuCheckboxes client:idle />
+      {/* Adjustment Columns Temp */}
+      <Button className="h-9 px-1 border" variant="Naked">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          ><path
+            class="transition-colors fill-gray-300 hover:fill-black"
+            d="M2 6.21c0-1.984 0-2.977.659-3.593C3.318 2 4.379 2 6.5 2c2.121 0 3.182 0 3.841.617C11 3.233 11 4.226 11 6.21v11.58c0 1.984 0 2.977-.659 3.593C9.682 22 8.621 22 6.5 22c-2.121 0-3.182 0-3.841-.617C2 20.767 2 19.774 2 17.79zm11 9.19c0-2.074 0-3.111.659-3.756C14.318 11 15.379 11 17.5 11c2.121 0 3.182 0 3.841.644C22 12.29 22 13.326 22 15.4v2.2c0 2.074 0 3.111-.659 3.756c-.659.644-1.72.644-3.841.644c-2.121 0-3.182 0-3.841-.644C13 20.71 13 19.674 13 17.6zm0-9.9c0-1.087 0-1.63.171-2.06a2.293 2.293 0 0 1 1.218-1.262C14.802 2 15.327 2 16.375 2h2.25c1.048 0 1.573 0 1.986.178c.551.236.99.69 1.218 1.262c.171.43.171.973.171 2.06c0 1.087 0 1.63-.171 2.06a2.293 2.293 0 0 1-1.218 1.262C20.198 9 19.673 9 18.625 9h-2.25c-1.048 0-1.573 0-1.986-.178a2.293 2.293 0 0 1-1.218-1.262C13 7.13 13 6.587 13 5.5"
+          ></path></svg
+        ></Button
+      >
+      {/* Hot Products */}
+      <SwitchDemo client:idle />
+      {/* Button Shoopping Cart */}
+      <div class="relative inline-block cursor-pointer">
+        <ShoppingCart client:idle />
+      </div>
+    </div>
+  </nav>
+</header>
 
-    <section class=" w-[100%]  " >
-        <section class="px-[25px] py-3 flex justify-between items-center border-b">
-            <div class=" inline-block" >
-                <MenubarDemo client:idle />
-            </div>
-            <div class="flex gap-3 items-center z-0 " >
-                <div class="cursor-pointer relative inline-block">
-                                     
-                    <DropdownMenuCheckboxes client:idle>
-                </div>
-                <SwitchDemo client:idle />
-                <div class="cursor-pointer relative inline-block">
-                        <svg class="absolute top-[50%] left-[13%] -translate-x-[50%] -translate-y-[50%]"  width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 3C0 2.44772 0.447715 2 1 2H3.67703C4.08593 2 4.45364 2.24895 4.6055 2.62861L5.15407 4H21.523C22.2304 4 22.7142 4.71453 22.4514 5.37139L19.5029 12.7428C19.1992 13.5021 18.4637 14 17.6459 14H8.21106L6.87255 16H19C19.5523 16 20 16.4477 20 17C20 17.5523 19.5523 18 19 18H5C4.63088 18 4.29178 17.7967 4.1179 17.4711C3.94402 17.1455 3.96365 16.7506 4.16895 16.4438L6.55276 12.8819L3 4H1C0.447715 4 0 3.55228 0 3ZM8.35407 12H17.6459L20.0459 6H5.95407L8.35407 12Z" fill="white"/>
-                            <path d="M7.5 21.25C7.5 22.2165 6.7165 23 5.75 23C4.7835 23 4 22.2165 4 21.25C4 20.2835 4.7835 19.5 5.75 19.5C6.7165 19.5 7.5 20.2835 7.5 21.25Z" fill="white"/>
-                            <path d="M18.25 23C19.2165 23 20 22.2165 20 21.25C20 20.2835 19.2165 19.5 18.25 19.5C17.2835 19.5 16.5 20.2835 16.5 21.25C16.5 22.2165 17.2835 23 18.25 23Z" fill="white"/>
-                        </svg>            
-                    <Button className="bg-black text-white px-[31px] h-[32px] pr-3 ">Revisar Carrito</Button>
-            </div>
-        </section>
-    </section>
+{/* Shop */}
+<main class="px-6">
+  {/* Nav Products */}
+  <section class="flex w-full">
+    {/* Sidebar */}
+    <aside class="flex mt-2 border-r pr-2 max-w-[224px] flex-1 ">
+      <Filters_Everything client:idle />
+    </aside>
+    {/* Products */}
+    <div class="flex flex-1 w-full py-6">
+      <Container_Products client:idle />
+    </div>
+  </section>
+</main>
 
-    </main>
+{/* Command Searcher */}
+<Command_searcher_shop client:idle />

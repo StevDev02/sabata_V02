@@ -1,48 +1,10 @@
 ---
-import { ButtonsLifeStyle } from "./Botones_Life_Style";
+import Content_Life_Style from "./Content_Life_Style.astro";
 ---
 
 <section
-  class="w-[100%] bg-cover bg-top bg-no-repeat relative h-[110vh]"
-  style="background-image: url(/img/Home/bg_header_04.webp)"
+  class="w-[100%] bg-cover bg-center   bg-no-repeat relative h-[110vh]"
+  style="background-image: url(/public/bg-LifeStyle.webp)"
 >
-  <div
-    class="z-20 w-[100%] text-center absolute -translate-x-[50%] -translate-y-[50%] top-[40%] left-[30%]"
-  >
-    <h2 class="text-[#000] font-black text-5xl  l">
-      Por que explorar es un estilo <br /> de vida
-    </h2>
-    <p class="mt-5 text-[#000]">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-      explicabo!
-    </p>
-    <p>Lorem ipsum dolor sit amet.</p>
-  </div>
-  <div>
-    <div
-      class="absolute -translate-x-[50%] -translate-y-[50%] top-[80%] left-[30%]"
-    >
-      <div class="flex items-center justify-center gap-6">
-        <ButtonsLifeStyle />
-      </div>
-    </div>
-  </div>
-  <div
-    class="z-20 text-center absolute -translate-x-[50%] -translate-y-[50%] top-[90%] left-[30%]"
-  >
-    <p class="text-[11px]">
-      *EL PRECIO ANTES DE INCENTIVO ES DE $32,90, SIN INCLUIR IMPUESTOS NI
-      CARGOS. SUJETO A CAMBIOS.*
-    </p>
-    <p class="cursor-pointer text-[11px] text_Card relative inline-block">
-      MÁS INFORMACIÓN SOBRE NUESTRAS OFERTAS
-    </p>
-  </div>
-  <img
-    class="max-w-[34%] -mt-[125px] top-[15%] absolute left-[75%] -translate-x-[50%]"
-    style="mask-image: linear-gradient(black 80%, transparent);"
-    loading="lazy"
-    src="/img/Home/05-foto-head.webp"
-    alt=""
-  />
+  <Content_Life_Style />
 </section>
