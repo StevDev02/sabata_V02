@@ -41,7 +41,7 @@ function NavHome() {
         onClick={handleClickLeave}>
         <NavigationMenuDemo/>
         </div>
-        <a className="z-50"href="#">Contacto</a>
+        <a className="z-50"href="/ec/contact">Contacto</a>
       </ul>
       <IconsNav hover={hover} />
     </nav> 
