@@ -13,6 +13,7 @@ import SummerOffer from "@/components/Home/Summer_Offers/Summer_Offer.astro";
 import LifeStyle from "@/components/Home/Life_Style/Life_Style.astro";
 import Collection from "@/components/Home/Collection/Collection.astro";
 import Footer from "@/components/Home/Footer.astro";
+import NavHome from "@/components/Home/Nav_Home/Nav_Home";
 ---
 
 <Home
@@ -21,6 +22,9 @@ import Footer from "@/components/Home/Footer.astro";
   fecha_publicacion="2024-05-02"
   keywords_pagina=""
 >
+  <header class='navegacion_home fixed w-[100%] top-0 left-0 px-0  text-white text-[15px] font-medium z-[999]'>
+    <NavHome client:idle />
+  </header>
   <main class="relative">
     <section class="cards_scroll_home bg-black">
       <Intro />
@@ -34,28 +38,27 @@ import Footer from "@/components/Home/Footer.astro";
     <section class="cards_scroll_home bg-black">
       <DiscountProducts />
     </section>
-    <section class="cards_scroll_home bg-black">
+    <section class="cards_scroll_home lifeStyle bg-black">
       <LifeStyle />
     </section>
-    <section class="">
+    <section class="footer_scroll_home bg-black">
       <Collection />
     </section>
     <Footer />
   </main>
 </Home>
 
-<script>
-  import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
+<style>
+  .hidden {
+    /* hacerlo hidden */
+    display: none;
+  }
 
-  gsap.registerPlugin(ScrollTrigger);
+  .navegacion_home {
+    backdrop-filter: blur(2px) saturate(97%);
+    -webkit-backdrop-filter: blur(2px) saturate(97%);
+    background-color: rgba(1, 1, 1, 0.05);
+}
+</style>
 
-  gsap.utils.toArray(".cards_scroll_home").forEach((panel, i) => {
-      ScrollTrigger.create({
-        trigger: panel,
-        start: "top top", // Comienza después de desplazarse 200px
-        pin: true,
-        pinSpacing: false,
-      });
-    });
-</script>
+<script src="../components/Home/Hooks/useScrollHome.js"></script>
