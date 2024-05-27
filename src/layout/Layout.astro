@@ -1,11 +1,7 @@
 ---
-
-// Header & Footer
-import Header from "../components/Header.tsx";
-import  SpeedInsights  from "@vercel/speed-insights/astro"
+import SpeedInsights from "@vercel/speed-insights/astro";
 import SEO from "../components/SEO.astro";
 import { ViewTransitions } from "astro:transitions";
-import "aos/dist/aos.css";
 
 interface Props {
   titulo_pagina: string;
@@ -39,12 +35,6 @@ const {
     <!-- SLOT -->
     <slot />
     <!-- SLOT -->
-    <!-- AOS Animaciones -->
-    <script>
-      import { aosInit } from "../services/Aos.js";
-      aosInit();
-      document.addEventListener("astro:after-swap", aosInit);
-    </script>
     <!-- Styles -->
     <style is:global>
       :root {
@@ -53,13 +43,13 @@ const {
         --Purpureus: #dda9ff;
         --Russian_Violet: #330036;
         --Light_Coral: #ef7674;
-        --Powder_Blue: #AAC7E6;
+        --Powder_Blue: #aac7e6;
         --Platinum: #e8e8e8;
         /* Other Colors */
-        --Timberwolf: #D3CCCC;
-        --Screaming_Green: #91FF8F;
-        --Charcoal: #40424E;
-        --Ash_Gray: #C4CCBC;
+        --Timberwolf: #d3cccc;
+        --Screaming_Green: #91ff8f;
+        --Charcoal: #40424e;
+        --Ash_Gray: #c4ccbc;
       }
 
       @font-face {
@@ -76,7 +66,6 @@ const {
         overflow-y: auto;
         color-scheme: light;
       }
-
     </style>
     <SpeedInsights />
   </body>
