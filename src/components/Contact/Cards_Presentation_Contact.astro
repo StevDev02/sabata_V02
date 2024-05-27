@@ -1,0 +1,35 @@
+---
+
+---
+
+<section class="overflow-x-hidden container relative flex items-center px-8 h-[100vh]">
+    <ul class="flex gap-8">
+        <li class="w-[641px] rounded-xl h-[480px] bg-[#000000] panel"></li>
+        <li class="w-[641px] rounded-xl h-[480px] bg-[#000000] panel"></li>
+        <li class="w-[641px] rounded-xl h-[480px] bg-[#000000] panel"></li>
+        <li class="w-[641px] rounded-xl h-[480px] bg-[#000000] panel"></li>
+    </ul>
+</section>
+
+<script>
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let sections = gsap.utils.toArray(".panel");
+
+    gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+        trigger: ".container",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 100),
+        end: () => "+=" + document.querySelector(".container").offsetWidth
+        }        
+                
+    })
+</script>
+        
