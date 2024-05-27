@@ -2,6 +2,9 @@
 // Layout
 import Home from "../layout/Layout.astro";
 
+// gsap
+
+
 // Sections
 import WomenFashion from "@/components/Home/Women_Fashion/Women_Fashion.astro";
 import Intro from "@/components/Home/Intro/Intro.astro";
@@ -19,12 +22,40 @@ import Footer from "@/components/Home/Footer.astro";
   keywords_pagina=""
 >
   <main class="relative">
-    <Intro />
-    <WomenFashion />
-    <SummerOffer />
-    <DiscountProducts />
-    <LifeStyle />
-    <Collection />
+    <section class="cards_scroll_home bg-black">
+      <Intro />
+    </section>
+    <section class="cards_scroll_home bg-black">
+      <WomenFashion />
+    </section>
+    <section class="cards_scroll_home bg-black">
+      <SummerOffer />
+    </section>
+    <section class="cards_scroll_home bg-black">
+      <DiscountProducts />
+    </section>
+    <section class="cards_scroll_home bg-black">
+      <LifeStyle />
+    </section>
+    <section class="">
+      <Collection />
+    </section>
     <Footer />
   </main>
 </Home>
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".cards_scroll_home").forEach((panel, i) => {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top top", // Comienza después de desplazarse 200px
+        pin: true,
+        pinSpacing: false,
+      });
+    });
+</script>
