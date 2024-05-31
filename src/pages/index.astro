@@ -2,6 +2,7 @@
 // Layout
 import Home from "@/layout/Layout.astro";
 
+// gsap
 // Sections
 import WomenFashion from "@/components/Home/Women_Fashion/Women_Fashion_Page.astro";
 import Intro from "@/components/Home/Intro/Intro_Page.astro";
@@ -10,6 +11,7 @@ import SummerOffer from "@/components/Home/Summer_Offers/Summer_Offer_Page.astro
 import LifeStyle from "@/components/Home/Life_Style/Life_Style_Page.astro";
 import Collection from "@/components/Home/Collection/Collection_Page.astro";
 import Footer from "@/components/Home/Footer.astro";
+import NavHome from "@/components/Home/Intro/nav/Nav_Home.jsx";
 ---
 
 <Home
@@ -18,13 +20,43 @@ import Footer from "@/components/Home/Footer.astro";
   fecha_publicacion="2024-05-02"
   keywords_pagina=""
 >
+  <header class='navegacion_home fixed w-[100%] top-0 left-0 px-0  text-white text-[15px] font-medium z-[999]'>
+    <NavHome client:idle />
+  </header>
   <main class="relative">
-    <Intro />
-    <WomenFashion />
-    <SummerOffer />
-    <DiscountProducts />
-    <LifeStyle />
-    <Collection />
+    <section class="bg-black cards_scroll_home">
+      <Intro />
+    </section>
+    <section class="bg-black cards_scroll_home">
+      <WomenFashion />
+    </section>
+    <section class="bg-black cards_scroll_home">
+      <SummerOffer />
+    </section>
+    <section class="bg-black cards_scroll_home">
+      <DiscountProducts />
+    </section>
+    <section class="bg-black cards_scroll_home lifeStyle">
+      <LifeStyle />
+    </section>
+    <section class="bg-black footer_scroll_home">
+      <Collection />
+    </section>
     <Footer />
   </main>
 </Home>
+
+<style>
+  .hidden {
+    /* hacerlo hidden */
+    display: none;
+  }
+
+  .navegacion_home {
+    backdrop-filter: blur(2px) saturate(97%);
+    -webkit-backdrop-filter: blur(2px) saturate(97%);
+    background-color: rgba(1, 1, 1, 0.05);
+}
+</style>
+
+<script src="../components/Home/Hooks/useScrollHome.js"></script>

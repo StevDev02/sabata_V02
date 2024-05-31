@@ -19,6 +19,7 @@ const Header = () => {
                 title="Logo de Sabata"
                 aria-label="Logo de Sabata"
                 href="https://sabata.com"
+                data-astro-prefetch="tap"
               >
                 SABATA
               </a>
