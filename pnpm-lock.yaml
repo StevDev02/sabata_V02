@@ -20,6 +20,12 @@ dependencies:
   '@astrojs/vercel':
     specifier: ^7.5.4
     version: 7.6.0(astro@4.9.1)(react@18.3.1)
+  '@fontsource/lemon':
+    specifier: ^5.0.20
+    version: 5.0.20
+  '@fontsource/poppins':
+    specifier: ^5.0.14
+    version: 5.0.14
   '@radix-ui/react-accordion':
     specifier: ^1.1.2
     version: 1.1.2(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)
@@ -1508,6 +1514,14 @@ packages:
 
   /@floating-ui/utils@0.2.2:
     resolution: {integrity: sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==}
+    dev: false
+
+  /@fontsource/lemon@5.0.20:
+    resolution: {integrity: sha512-FLW55Lnt26FhY9KzYCOx7bqsuyaDta3/GcdMMu+0dGXfPvVFQKIrbgJMIaVJsdmxKS6h9FE+EWAdbqk6KToVCQ==}
+    dev: false
+
+  /@fontsource/poppins@5.0.14:
+    resolution: {integrity: sha512-nmM1zpPo3Uh4JcGAVSQuWaZNYh2FbbwWhZ5t6hRaynmJaNTBW85d3nEh9zMmzI0HX7X5xqQVdRHeDatKpOGsnA==}
     dev: false
 
   /@google-cloud/firestore@7.7.0:

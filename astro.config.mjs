@@ -9,10 +9,10 @@ export default defineConfig({
   prefetch: true,
   site: "https://sabata.com",
   integrations: [tailwind(), sitemap({
-    changefreq: "weekly",
+    changefreq: "monthly",
     priority: 0.8,
     // Cambiar para el deploy
-    lastmod: new Date("2024-05-02"),
+    lastmod: new Date("2024-05-29"),
     i18n: {
       defaultLocale: "es",
       locales: {

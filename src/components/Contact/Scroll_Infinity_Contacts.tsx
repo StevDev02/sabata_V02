@@ -18,14 +18,14 @@ export default function LogoRoll() {
    
     return (
       <section
-        className="w-full max-w-3xl mt-10 overflow-hidden select-none bg-[#0e1116]"
+        className="w-full max-w-3xl my-10 overflow-hidden select-none bg-[#0e1116]"
         style={{
           WebkitMask:
             "linear-gradient(90deg, transparent, black 20%, black 80%, transparent)",
           mask: "linear-gradient(90deg, transparent, black 20%, black 50%, black transparent)",
         }}
       >
-        <div className="w-full h-fit max-w-3xl flex flex-col justify-center select-none overflow-hidden">
+        <div className="flex flex-col justify-center w-full max-w-3xl overflow-hidden select-none h-fit">
           <div className="w-max flex flex-nowrap gap-[4rem] animate-slide-logos">
             {dobleLogos.map((logo, index) => (
               <img
@@ -33,7 +33,7 @@ export default function LogoRoll() {
                 src={logo.src}
                 alt={logo.alt}
                 loading="eager"
-                className="size-20 object-contain"
+                className="object-contain size-20"
               />
             ))}
           </div>

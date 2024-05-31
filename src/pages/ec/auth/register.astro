@@ -1,13 +1,11 @@
 ---
-
-import Register_Page_Layout from "../../../layout/Layout.astro";
-import { ViewTransitions } from "astro:transitions";
-import RegisterPage from "@/components/Register/RegisterPage.astro";
-
-
+// Layout
+import Register_Layout from "@/layout/Layout.astro";
+// Sections
+import RegisterPage from "@/components/Register/Register_Page.astro";
 ---
 
-<Register_Page_Layout
+<Register_Layout
 transition:animate="slide"
   titulo_pagina="Registro"
   descripcion_pagina=""
@@ -15,4 +13,4 @@ transition:animate="slide"
   keywords_pagina=""
 >
   <RegisterPage />
-</Register_Page_Layout>
+</Register_Layout>

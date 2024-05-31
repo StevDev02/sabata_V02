@@ -1,7 +1,13 @@
 ---
+// Vercel
 import SpeedInsights from "@vercel/speed-insights/astro";
-import SEO from "../components/SEO.astro";
+// Components Astro
+import SEO from "@/components/SEO.astro";
+// Astro Animations
 import { ViewTransitions } from "astro:transitions";
+// Fonts
+import '@fontsource/poppins';
+import '@fontsource/lemon';
 
 interface Props {
   titulo_pagina: string;
@@ -30,38 +36,13 @@ const {
     />
   </head>
   <!-- Content -->
-  <body class="bg-[--Platinum]">
-    <!-- HEADER -->
+  <body>
     <!-- SLOT -->
     <slot />
     <!-- SLOT -->
-    <!-- Styles -->
     <style is:global>
-      :root {
-        /* Palette */
-        --Nyanza: #e4fde1;
-        --Purpureus: #dda9ff;
-        --Russian_Violet: #330036;
-        --Light_Coral: #ef7674;
-        --Powder_Blue: #aac7e6;
-        --Platinum: #e8e8e8;
-        /* Other Colors */
-        --Timberwolf: #d3cccc;
-        --Screaming_Green: #91ff8f;
-        --Charcoal: #40424e;
-        --Ash_Gray: #c4ccbc;
-      }
-
-      @font-face {
-        font-family: "Poppins";
-        src: url("/fonts/Poppins-Regular.ttf") format("woff");
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
-
       html {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Lemon', -apple-system, system-ui, sans-serif;
         overflow-x: hidden;
         overflow-y: auto;
         color-scheme: light;

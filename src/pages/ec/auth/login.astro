@@ -1,14 +1,15 @@
 ---
-import Log_In_Page from "../../../layout/Layout.astro";
+// Components Astro
+import Login_Layout from "@/layout/Layout.astro";
 // Sections
-import Log_In_Content from "@/components/Login/Log_In.astro";
+import Login_Page from "@/components/Login/Login_Page.astro";
 ---
 
-<Log_In_Page
+<Login_Layout
   titulo_pagina="Iniciar Sesion"
   descripcion_pagina=""
   fecha_publicacion="2024-05-02"
   keywords_pagina=""
 >
-  <Log_In_Content />
-</Log_In_Page>
+  <Login_Page />
+</Login_Layout>

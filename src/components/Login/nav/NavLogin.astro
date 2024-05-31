@@ -1,16 +1,17 @@
 ---
+// Components Astro
 import LogoNavLogin from "./LogoNavLogin.astro";
 import NavOptiosLogin from "./NavOptionsLogin.astro";
 
 ---
-<nav class='w-[100%] flex items-center justify-between px-14 py-5 text-[13px] '>
+<nav class='flex items-center justify-between w-full py-5 text-sm px-14 '>
     <LogoNavLogin />
-    <ul class=' flex items-center justify-between p-1 gap-7  '>
+    <ul class='flex items-center justify-between p-1 gap-7'>
       <li class='flex gap-10 '>
-        <a href='/ec/shop/' class='link_login' href=''>Tienda </a>
-        <a class='link_login' href=''>Accesorio</a>
-        <a class='link_login' href=''>Ofertas </a>
-        <a class='link_login' href=''>Contacto</a>
+        <a href='/ec/shop/' data-astro-prefetch="tap" class="link_login" href=''>Tienda </a>
+        <a class="link_login" href="" data-astro-prefetch="tap" >Accesorio</a>
+        <a class="link_login" href="" data-astro-prefetch="tap" >Ofertas </a>
+        <a class="link_login" href="" data-astro-prefetch="tap" >Contacto</a>
       </li>
     </ul>
     <NavOptiosLogin />

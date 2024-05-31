@@ -1,0 +1,24 @@
+---
+// Components Astro
+import NavRegister from "./nav/NavRegister.astro";
+import { RegisterForm } from "./RegisterForm";
+import RegisterOptionText from "./RegisterOptionText.astro";
+// Styles
+import "./Register.module.css";
+---
+
+<!-- Register Page -->
+<main
+  class="absolute w-full bg-center bg-no-repeat bg-cover h-dvh bg_login_img"
+  style="background-image: url(/img/login/selena_login.jpg)"
+>
+  <header>
+    <NavRegister />
+  </header>
+  <section
+    class="flex items-center justify-between w-full gap-10 pl-20 header__content pr-14"
+  >
+    <RegisterForm client:idle />
+    <RegisterOptionText />
+  </section>
+</main>

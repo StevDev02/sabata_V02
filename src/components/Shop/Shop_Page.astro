@@ -1,16 +1,18 @@
 ---
-import { BreadcrumbDemo } from "./Shandcn_Shop/Breadcrumb/Breadcrumb_shop";
-import { Searcher } from "./Shandcn_Shop/Input/Input_shop";
-import { SwitchDemo } from "./Shandcn_Shop/Switch/switch_shop";
-import { MenubarDemo } from "./Shandcn_Shop/Menu_Bar/menubar_shop";
-import { DropdownMenuCheckboxes } from "./Shandcn_Shop/Drop_Menu/drop_menu_filters_shop";
-import ShoppingCart from "./Shandcn_Shop/Sheet/Shooping_Cart";
-import Command_searcher_shop from "./Shandcn_Shop/Command/Command_searcher_shop";
-import { Avatar } from "../ui/avatar";
-import Container_Products from "./Shandcn_Shop/Containers_Scroll_Area/Container_Products";
-import { Separator } from "@/components/ui/separator";
-import { Button } from "../ui/button";
-import Filters_Everything from "./Shandcn_Shop/Sidebar/Filters_everything";
+// Components Shadcn UI
+import { BreadcrumbDemo } from "@/components/Shop/Shadcn_Shop/Breadcrumb/breadcrumb_shop";
+import { Searcher } from "@/components/Shop/Shadcn_Shop/Input/Input_shop";
+import { SwitchDemo } from "@/components/Shop/Shadcn_Shop/Switch/switch_shop";
+import { MenubarDemo } from "@/components/Shop/Shadcn_Shop/Menu_Bar/menubar_shop";
+import { DropdownMenuCheckboxes } from "@/components/Shop/Shadcn_Shop/Drop_Menu/drop_menu_filters_shop";
+import { Avatar } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+
+// Custom Components Shadcn UI
+import Command_searcher_shop from "@/components/Shop/Shadcn_Shop/Command/Command_searcher_shop";
+import ShoppingCart from "@/components/Shop/Shadcn_Shop/Sheet/Shooping_Cart";
+import Container_Products from "@/components/Shop/Shadcn_Shop/Containers_Scroll_Area/Container_Products";
+import Filters_Everything from "@/components/Shop/Shadcn_Shop/Sidebar/Filters_everything";
 ---
 
 <header class="border-b">
@@ -27,9 +29,9 @@ import Filters_Everything from "./Shandcn_Shop/Sidebar/Filters_everything";
   </nav>
 </header>
 
-<header class="sticky py-[18px] w-[100%] bg-white border-b">
-  <nav class="flex px-[24px] items-center justify-between">
-    <h1 class=" text-2xl font-semibold">Tienda</h1>
+<header class="sticky w-full py-4 bg-white border-b">
+  <nav class="flex items-center justify-between px-6">
+    <h1 class="text-2xl font-semibold">Tienda</h1>
     {/* Categories Temp */}
     <MenubarDemo client:idle />
     <div class="flex items-center justify-center gap-4">
@@ -62,8 +64,8 @@ import Filters_Everything from "./Shandcn_Shop/Sidebar/Filters_everything";
 <main class="px-6">
   {/* Nav Products */}
   <section class="flex w-full">
-    {/* Sidebar */}
-    <aside class="flex mt-2 border-r pr-2 max-w-[224px] flex-1 ">
+    {/* Sidebar Filter */}
+    <aside class="flex mt-2 border-r pr-2 max-w-[224px] flex-1">
       <Filters_Everything client:idle />
     </aside>
     {/* Products */}

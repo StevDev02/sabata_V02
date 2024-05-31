@@ -1,6 +1,21 @@
 ---
+// Layout
+import Shop_Layout from "@/layout/Layout.astro";
+// Sections
 import Shop_Page from "@/components/Shop/Shop_Page.astro";
-
-
 ---
-<Shop_Page />
+
+<Shop_Layout
+  titulo_pagina="Tienda"
+  descripcion_pagina=""
+  fecha_publicacion="2024-05-02"
+  keywords_pagina=""
+>
+  <Shop_Page />
+</Shop_Layout>
+
+<style>
+   html {
+      font-family: 'Poppins', -apple-system, system-ui, sans-serif;
+   }
+</style>

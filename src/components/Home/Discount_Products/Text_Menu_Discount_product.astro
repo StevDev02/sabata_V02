@@ -1,15 +1,17 @@
 ---
-import { ButtonsDiscountProducts } from "./Botones_Discount_Products";
+// Components React
+import { ButtonsDiscountProducts } from "@/components/Home/Discount_Products/custom_components/Button_Discount_Products";
 ---
 
+<!-- Discount Link -->
 <div
-  class="absolute  w-[100%] top-[50%] z-20 left-[75%] -translate-x-[50%] -translate-y-[50%]"
+  class="absolute w-full top-[50%] z-20 left-[70%] -translate-x-[50%] -translate-y-[50%] text-black"
 >
   <div class="text-center">
-    <h2 class="text-5xl font-black text-[#000] text pb-6">
+    <h2 class="pb-6 text-5xl font-black">
       ¡Llegaron las ofertas de<br /> verano!
     </h2>
-    <p class="text-base text-[#000]">
+    <p class="text-base">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, <br
       /> Lorem ipsum dolor sit amet.
     </p>
@@ -17,11 +19,11 @@ import { ButtonsDiscountProducts } from "./Botones_Discount_Products";
       <ButtonsDiscountProducts />
     </div>
     <div class="text-sm">
-      <p class=" text-[12px] relative block text-black">
+      <p class="relative block text-xs">
         *LAS OFERTAS TIENEN TIEMPO LIMITADO O HASTA GASTAR STOCK. NO SE PUEDE
         CANCELAR.
       </p>
-      <p class="cursor-pointer text-[11px] text_Card relative inline-block">
+      <p class="relative inline-block text-xs cursor-pointer">
         MÁS INFORMACIÓN SOBRE NUESTRAS OFERTAS
       </p>
     </div>

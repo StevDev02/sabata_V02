@@ -1,14 +1,17 @@
 ---
-import Contact_Container from "@/components/Contact/Contact_Container.astro"
-import Contacto from "@/layout/Layout.astro";
+// Layout
+import Contact_Layout from "@/layout/Layout.astro";
+// Sections
+import Contact_Page from "@/components/Contact/Contact_Container.astro";
 ---
-<Contacto
+
+<Contact_Layout
   titulo_pagina="Contacto"
   descripcion_pagina=""
   fecha_publicacion="2024-05-02"
   keywords_pagina=""
 >
-	<main class="relative" style="background-color: #0e1116;">
-        <Contact_Container />
-	</main>
-</Contacto>
+  <main class="relative" style="background-color: #0e1116;">
+    <Contact_Page />
+  </main>
+</Contact_Layout>

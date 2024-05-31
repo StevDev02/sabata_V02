@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 const Login_Form = () => {
   return (
     <>
-      <form className='grid text-xs gap-4 text-zinc-600 pt-10' action=''>
-        <h2 className='text-base font-extralight text-black'>ACCEDE A TU CUENTA</h2>
+      <form className='flex flex-col gap-4 pt-10 text-xs text-zinc-600' action=''>
+        <h2 className='text-base text-black font-extralight'>ACCEDE A TU CUENTA</h2>
         <input
           type='email'
           placeholder='EMAIL'
@@ -34,9 +34,9 @@ const Login_Form = () => {
           <div className='w-[110px] h-[1px] bg-[#00000018] ' /> <label className='text-xs text-[#00000080] '>O inicia con</label><div className='w-[110px] h-[1px] bg-[#00000018] ' />
         </div>
         <div className='flex items-center justify-center gap-5'>
-          {/* <img className=' border rounded-lg px-6 py-2 ' src={google} alt='' />
-          <img className=' border rounded-lg px-6 py-2' src={iphone} alt='' />
-          <img className=' border rounded-lg px-6 py-2' src={facebook} alt='' /> */}
+          {/* <img className='px-6 py-2 border rounded-lg ' src={google} alt='' />
+          <img className='px-6 py-2 border rounded-lg ' src={iphone} alt='' />
+          <img className='px-6 py-2 border rounded-lg ' src={facebook} alt='' /> */}
         </div>
 
       </form>

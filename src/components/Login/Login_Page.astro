@@ -1,0 +1,25 @@
+---
+// Components React
+import Login_Form from "./Login_Form";
+// Components Astro
+import NavLogin from "./nav/NavLogin.astro";
+import LoginOptionText from "./LoginOptionText.astro";
+// Styles
+import "./Login.module.css";
+---
+
+<!-- Login Page -->
+<main
+  class="w-full bg-center bg-no-repeat bg-cover h-dvh"
+  style="background-image: url(/img/login/selena_login.jpg)"
+>
+  <header>
+    <NavLogin />
+  </header>
+  <section
+    class="flex items-center justify-between w-full gap-10 px-20 mt-11 header__content"
+  >
+    <LoginOptionText />
+    <Login_Form client:idle />
+  </section>
+</main>

@@ -12,15 +12,15 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-          "slide-logos": {
-            to: { transform: "translateX(calc(-50% - 2rem))" },
-          },
+        "slide-logos": {
+          to: { transform: "translateX(calc(-50% - 2rem))" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "slide-logos": "slide-logos 15s linear infinite",
         "accordion-up": "accordion-up 0.2s ease-out",
-        'scroll-infinito': 'scroll-infinito 25s reverse linear infinite',
+        "scroll-infinito": "scroll-infinito 25s reverse linear infinite",
       },
     },
   },
