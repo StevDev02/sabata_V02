@@ -30,7 +30,7 @@ const NavigationMenuList = React.forwardRef<
   <NavigationMenuPrimitive.List
     ref={ref}
     className={cn(
-      "group flex flex-1  list-none items-center justify-center space-x-1",
+      "flex gap-12 list-none items-center justify-center",
       className
     )}
     {...props}
@@ -54,10 +54,7 @@ const NavigationMenuTrigger = React.forwardRef<
     {...props}
   >
     {children}{" "}
-    <ChevronDownIcon
-      className="relative top-[1px] ml-1 h-3 w-3 transition duration-300 group-data-[state=open]:rotate-180"
-      aria-hidden="true"
-    />
+    
   </NavigationMenuPrimitive.Trigger>
 ))
 NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName
@@ -83,7 +80,7 @@ const NavigationMenuViewport = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Viewport>,
   React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
 >(({ className, ...props }, ref) => (
-  <div className={cn("absolute  bg-white w-[1320px]  -left-[127.5.5%] -z-50 -top-[40%] flex justify-center")}>
+  <div className={cn("absolute  bg-white w-[1320px]  -left-[50%] -z-50 -top-[40%] flex justify-center")}>
     <NavigationMenuPrimitive.Viewport
       className={cn(
         "origin-top-cente  relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden  bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]",

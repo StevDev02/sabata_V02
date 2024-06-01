@@ -1,7 +1,8 @@
 import { useRef, useState } from 'react';
-import { IconsNav } from './Icons';
 import LogoHome from './LogoHome';
 import { NavigationMenuDemo } from './Nav_Content_Center';
+import './nav.css'
+import { CartAndUser } from './Icons';
 
 function NavHome() {
   const [hover, setHover] = useState(false);
@@ -34,16 +35,16 @@ function NavHome() {
       
     >
       <LogoHome />
-      <ul className='flex items-center justify-between p-1 gap-7'>
+      <ul className='flex items-center justify-between gap-10 p-1'>
         <div
         onMouseEnter={handleHoverEnter} 
         onMouseLeave={handleHoverLeave}
         onClick={handleClickLeave}>
         <NavigationMenuDemo/>
         </div>
-        <a className="z-50"href="/ec/contact">Contacto</a>
+        <a className="z-50 text-font_Poppins text-sm"href="https://www.framer.com/2023">CONTACTO</a>
       </ul>
-      <IconsNav hover={hover} />
+      <CartAndUser hover={hover} />
     </nav> 
   );
 }

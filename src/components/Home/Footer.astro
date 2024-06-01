@@ -1,61 +1,65 @@
-<footer
-  class="z-20 text-black absolute -translate-x-[0%] -translate-y-[50%] -bottom-[2%] left-[5%]"
->
-  <div class="col">
-    <img class="logo" src="" alt="" />
-    <h4 class="text-lg font-black">Contactos</h4>
-    <p><strong>Dirección: </strong>Galo PI. Lasso y Pedro Carbono, Carapungo</p>
-    <p><strong>Telefono: </strong>+593 99 920 3644</p>
-    <p><strong>Horario: </strong>08:00 - 13:00, Lunes a Sabados</p>
-    <div class="follow">
-      <h4 class="text-lg font-black">Siguenos</h4>
-      {
-        /* <div class='icon'>
-        <img src='images/footer/facebook.png' alt='' />
-        <img src='images/footer/instagram.png' alt='' />
-        <img src='images/footer/tik-tok.png' alt='' />
-        <img src='images/footer/twitter.png' alt='' />
-        <img src='images/footer/whatsapp.png' alt='' /> */
-      }
-      {/* </div> */}
-    </div>
-  </div>
+<footer class="z-20 absolute translate-y-[-50%] -bottom-[1%] text-center w-full flex h-[200px] items-center justify-between px-10 ">
+      
+      <div class="flex flex-col items-center justify-center text-center">
+        <h4 class="text-lg text-black font-semibold ">Please Help Me</h4>
+         <a href='/shop/about-contact' class="list_hover">CONTACT</a>
+         <a href='/faq.html' class="list_hover">FAQ</a>
+         <a href='/shop/store-locator' class="list_hover">STORE LOCATOR</a>
+         <a href='/shop/user-registration?URL=' class="list_hover">NEW USERS</a>
+         <a href='/shop/order-status' class="list_hover">ORDER STATUS</a>
+       </div>
 
-  <div class="col">
-    <h4 class="text-lg font-black">Acerca de</h4>
-    <a class="relative links__a" href="#">Sobre nosotros</a>
-    <a class="relative links__a" href="#">Información de entrega</a>
-    <a class="relative links__a" href="#">Politicas y Privacidad</a>
-    <a class="relative links__a" href="#">Terminos y condiciones</a>
-    <a class="relative links__a" href="#">Contactanos</a>
-  </div>
+      <div class="flex flex-col items-center justify-center text-center">
+       <h4 class="text-lg text-black font-semibold ">Please Help Me</h4>
+        <a href='/shop/about-contact' class="list_hover">CONTACT</a>
+        <a href='/faq.html' class="list_hover">FAQ</a>
+        <a href='/shop/store-locator' class="list_hover">STORE LOCATOR</a>
+        <a href='/shop/user-registration?URL=' class="list_hover">NEW USERS</a>
+        <a href='/shop/order-status' class="list_hover">ORDER STATUS</a>
+      </div>
 
-  <div class="col">
-    <h4 class="text-lg font-black">Mi cuenta</h4>
-    <a class="links__a relative hover:text-[#000]" href="#">Regístrate</a>
-    <a class="links__a relative hover:text-[#000]" href="#">Ver carrito</a>
-    <a class="links__a relative hover:text-[#000]" href="#"
-      >Mi lista de deseos</a
-    >
-    <a class="links__a relative hover:text-[#000]" href="#"
-      >Seguimiento de mi pedido</a
-    >
-    <a class="links__a relative hover:text-[#000]" href="#">Ayuda</a>
-  </div>
+      <div class="flex flex-col items-center justify-center text-center">
+        <h4 class="text-lg text-black font-semibold ">Please Help Me</h4>
+         <a href='/shop/about-contact' class="list_hover">CONTACT</a>
+         <a href='/faq.html' class="list_hover">FAQ</a>
+         <a href='/shop/store-locator' class="list_hover">STORE LOCATOR</a>
+         <a href='/shop/user-registration?URL=' class="list_hover">NEW USERS</a>
+         <a href='/shop/order-status' class="list_hover">ORDER STATUS</a>
+       </div>
 
-  <div class="col install">
-    <h4 class="text-lg font-black">Descarga nuestra app</h4>
-    <p>Desde App Store o Google Play</p>
-    <div class="row">
-      {
-        /* <img src='images/footer/google-play.jpg' />
-      <img src='images/footer/app-store.jpg' /> */
-      }
-    </div>
-    <p>Pasarelas de pago seguras</p>
-    <img src="" alt="" />
-  </div>
-  <div class="copyrigth">
-    <p>© 2024, Sabata etc - HTML CSS Ecommerce Page</p>
-  </div>
+       <div class="flex flex-col items-center justify-center text-center">
+        <h4 class="text-lg text-black font-semibold ">Please Help Me</h4>
+         <a href='/shop/about-contact' class="list_hover">CONTACT</a>
+         <a href='/faq.html' class="list_hover">FAQ</a>
+         <a href='/shop/store-locator' class="list_hover">STORE LOCATOR</a>
+         <a href='/shop/user-registration?URL=' class="list_hover">NEW USERS</a>
+         <a href='/shop/order-status' class="list_hover">ORDER STATUS</a>
+       </div>
+
+  
 </footer>
+
+<style>
+  .list_hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .list_hover::after {
+    content: "";
+    width: 80%;
+    height: 1px;
+    transform: translateX(-50%);
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all .2s ease-in-out;
+  }
+  .list_hover:hover::after {
+    height: 2px;
+    width: 100%;
+  }
+</style>
+
+

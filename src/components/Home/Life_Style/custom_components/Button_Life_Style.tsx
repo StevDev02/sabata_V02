@@ -8,8 +8,8 @@ export function ButtonsLifeStyle () {
       <>
         {infoButton.map((item, index) => (
           <button
-            style={{ backgroundColor: index === 0 ? '#434a5f' : '#fafafa', color: index === 0 ? '#fafafa' : '#313131' }}
-            className='py-2 mb-4 ml-5 font-medium rounded-md px-14'
+            style={{ backgroundColor: index === 0 ? '#3a596c' : '#fafafa', color: index === 0 ? '#fafafa' : '#313131' }}
+            className='w-[247px] py-2 mb-4 ml-1 font-medium rounded-md'
             key={index}
           >{item}
           </button>

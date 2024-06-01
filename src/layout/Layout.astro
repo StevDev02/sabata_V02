@@ -36,17 +36,30 @@ const {
     />
   </head>
   <!-- Content -->
-  <body>
+  <body class="body">
     <!-- SLOT -->
     <slot />
     <!-- SLOT -->
     <style is:global>
       html {
-        font-family: 'Lemon', -apple-system, system-ui, sans-serif;
         overflow-x: hidden;
-        overflow-y: auto;
+        /* overflow-y: hidden; */
         color-scheme: light;
       }
+      
+    body {
+      overflow: hidden;
+      -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+
+      
+
     </style>
     <SpeedInsights />
   </body>

@@ -5,6 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const footer = document.querySelector(".footer_scroll_home");
 const navegacion_home = document.querySelector(".navegacion_home");
+const header = document.querySelector(".header_scroll_home");
 
 ScrollTrigger.create({
     trigger: footer,
@@ -12,13 +13,19 @@ ScrollTrigger.create({
     onEnter: () => {
         navegacion_home.classList.add("hidden");
     },
+    onLeaveBack: () => {
+        navegacion_home.classList.remove("hidden");
+    },
 });
 
 ScrollTrigger.create({
-    trigger: footer,
-    start: "top 10%",
+    trigger: header,
+    start: "center -35%",
+    onEnter: () => {
+        navegacion_home.classList.add("blur_menu");
+    },
     onLeaveBack: () => {
-        navegacion_home.classList.remove("hidden");
+        navegacion_home.classList.remove("blur_menu");
     },
 });
 
