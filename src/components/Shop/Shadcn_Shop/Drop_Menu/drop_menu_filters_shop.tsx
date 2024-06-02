@@ -1,6 +1,3 @@
-"use client";
-
-import * as React from "react";
 
 import { Button } from "@/components/Shop/Shadcn_Shop/Button/button_variants_shop";
 import {
@@ -11,21 +8,22 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import type { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu";
+import type {DropdownMenuCheckboxItemProps} from "@radix-ui/react-dropdown-menu"
+import { useState } from "react";
 
 type Checked = DropdownMenuCheckboxItemProps["checked"];
 
 export function DropdownMenuCheckboxes() {
-  const [showStatusBar, setShowStatusBar] = React.useState<Checked>(true);
-  const [showActivityBar, setShowActivityBar] = React.useState<Checked>(false);
-  const [showPanel, setShowPanel] = React.useState<Checked>(false);
+  const [showStatusBar, setShowStatusBar] = useState<Checked>(true);
+  const [showActivityBar, setShowActivityBar] = useState<Checked>(false);
+  const [showPanel, setShowPanel] = useState<Checked>(false);
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
           className="flex items-center justify-between gap-1 border shadow-none"
-          variant="outline"
+          // variant="outline"
         >
           Filtro
           <svg
