@@ -42,7 +42,7 @@ function NavHome() {
         onClick={handleClickLeave}>
         <NavigationMenuDemo/>
         </div>
-        <a className="z-50 text-font_Poppins text-sm"href="https://www.framer.com/2023">CONTACTO</a>
+        <a className="z-50 text-font_Poppins text-sm"href="/ec/contact">CONTACTO</a>
       </ul>
       <CartAndUser hover={hover} />
     </nav> 
