@@ -10,6 +10,7 @@ export default defineConfig({
   experimental: {
     clientPrerender: true,
   },
+  // Prefetching of Pages Added
   prefetch: true,
   site: "https://sabata.com",
   integrations: [
