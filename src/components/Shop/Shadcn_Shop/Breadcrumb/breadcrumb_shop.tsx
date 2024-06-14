@@ -33,18 +33,18 @@ export function BreadcrumbDemo() {
                 <a
                   title="Accesorios"
                   aria-label="Accesorios"
-                  href="/ec/accesories"
+                  href="/es/accesories"
                 >
                   Accesorios
                 </a>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <a title="Ofertas" aria-label="Ofertas" href="/ec/offers">
+                <a title="Ofertas" aria-label="Ofertas" href="/es/offers">
                   Ofertas
                 </a>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <a title="Contacto" aria-label="Contacto" href="/ec/contact">
+                <a title="Contacto" aria-label="Contacto" href="/es/contact">
                   Contacto
                 </a>
               </DropdownMenuItem>

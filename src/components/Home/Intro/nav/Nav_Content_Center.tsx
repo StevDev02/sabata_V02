@@ -10,6 +10,9 @@ import {
 } from "@/components/ui/navigation-menu";
 // Styles
 import "@/components/Home/Intro/Intro.module.css";
+// Imagen Optimizada
+import { ImageComponent } from "@/components/OptimizedImages/ImageComponent.tsx";
+
 
 export function NavigationMenuDemo() {
   return (
@@ -24,12 +27,8 @@ export function NavigationMenuDemo() {
                 href="#"
               >
                 <div className="flex flex-col items-center justify-center">
-                  <div className=" w-[220px] h-[123px] ">
-                    <img
-                      className="w-full box_img_menu_items_navegation"
-                      src="/img/Intro/tacones_nav_intro.png"
-                      alt=""
-                    />
+                  <div className="flex items-center justify-center w-[220px] h-[123px] ">
+                    <ImageComponent src="/public/tacones_nav_intro.webp" width="200" height="160" alt="tacones" />
                   </div>
                   <h2 className="font-medium text-md">Modelo S</h2>
                   <div className="flex gap-4 mt-2">
@@ -215,7 +214,7 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        
+
 
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-font_Poppins">Accesorios</NavigationMenuTrigger>
@@ -357,7 +356,7 @@ export function NavigationMenuDemo() {
           <NavigationMenuTrigger className="text-font_lemon">sabata</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className=" flex cursor-auto items-center relative justify-center pb-8 pt-20 w-[1100px]">
-              <ListItem className="bg-transparent" href="/ec/shop/">
+              <ListItem className="bg-transparent" href="/es/shop/">
                 <div className="flex flex-col items-center justify-center">
                   <div className=" w-[220px] h-[123px] ">
                     <img
@@ -369,7 +368,7 @@ export function NavigationMenuDemo() {
                   <h2 className="font-medium text-md">Tacones</h2>
                 </div>
               </ListItem>
-              <ListItem className="-ml-16 bg-transparent" href="/ec/shop/">
+              <ListItem className="-ml-16 bg-transparent" href="/es/shop/">
                 <div className="flex flex-col items-center justify-center">
                   <div className=" w-[220px] h-[123px] ">
                     <img
@@ -381,7 +380,7 @@ export function NavigationMenuDemo() {
                   <h2 className="font-medium text-md ">Faldas</h2>
                 </div>
               </ListItem>
-              <ListItem className="-ml-16 bg-transparent" href="/ec/shop/">
+              <ListItem className="-ml-16 bg-transparent" href="/es/shop/">
                 <div className="flex flex-col items-center justify-center">
                   <div className=" w-[220px] h-[123px] ">
                     <img
@@ -393,7 +392,7 @@ export function NavigationMenuDemo() {
                   <h2 className="font-medium text-md">Pantalones</h2>
                 </div>
               </ListItem>
-              <ListItem className="-ml-16 bg-transparent" href="/ec/shop/">
+              <ListItem className="-ml-16 bg-transparent" href="/es/shop/">
                 <div className="flex flex-col items-center justify-center">
                   <div className=" w-[220px] h-[123px] ">
                     <img
@@ -405,7 +404,7 @@ export function NavigationMenuDemo() {
                   <h2 className="font-medium text-md">Blusas</h2>
                 </div>
               </ListItem>
-              <ListItem className="-ml-16 bg-transparent" href="/ec/shop/">
+              <ListItem className="-ml-16 bg-transparent" href="/es/shop/">
                 <div className="flex flex-col items-center justify-center">
                   <div className=" w-[220px] h-[123px] ">
                     <img

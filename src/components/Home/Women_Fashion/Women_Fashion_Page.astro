@@ -1,12 +1,10 @@
 ---
 import TextWomenFashion from "./TextWomenFashion.astro";
 
-// Components Astro
-
+// Fondo Optimizado
+import { BackgroundImgComponent } from "@/components/OptimizedImages/BackgroundImgComponent";
 ---
-<section
-  class="relative w-full bg-center bg-no-repeat bg-cover h-dvh"
-  style="background-image: url(/bg-Women_Fashion.webp)"
->
-    <TextWomenFashion />
-</section>
+
+<BackgroundImgComponent src="/bg-Women_Fashion.webp">
+  <TextWomenFashion />
+</BackgroundImgComponent>

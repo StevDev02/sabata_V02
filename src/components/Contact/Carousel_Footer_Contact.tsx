@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
@@ -29,7 +30,7 @@ export function CarouselSizeContactFooter() {
             <div className="p-1">
               <Card>
                 <CardContent className="flex w-[395px] h-[415px] items-center justify-center p-6">
-                  <img className="w-full cover" src={image.src} alt={image.alt} />
+                  <img className="w-full cover aspect-auto" src={image.src} alt={image.alt} decoding="async" loading="lazy" />
                 </CardContent>
               </Card>
             </div>

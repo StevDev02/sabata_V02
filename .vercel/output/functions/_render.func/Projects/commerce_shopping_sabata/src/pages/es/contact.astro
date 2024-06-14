@@ -1,0 +1,23 @@
+---
+// Layout
+import Contact_Layout from "@/layout/Layout.astro";
+// Sections
+import Contact_Page from "@/components/Contact/Contact_Container.astro";
+---
+
+<Contact_Layout
+  title_page="Contacto"
+  description_page=""
+  last_update="2024-05-02"
+  keywords_page={[""]}
+>
+  <main class="relative text-white bg-[#111]">
+    <Contact_Page />
+  </main>
+</Contact_Layout>
+
+<style>
+  body {
+    font-family: "Cabin Variable", sans-serif;
+  }
+</style>
